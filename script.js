@@ -1,9 +1,17 @@
-var names = ["John", "Joe"];
-for(var i=0; i < names. length; i++) {
-	console. log("Hello" + names[i]);
-}
 
-names[100] = "Yaakov";
-for(var i=0; i < names. length; i++) {
-	console. log("Hello SomeName");
-}
+
+
+(function () {
+  var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+  for (var i = 0; i < names.length; i++) {
+    var firstLetter = names[i].charAt(0).toLowerCase();
+
+    if (firstLetter == 'j') {
+      byeSpeaker.speak(names[i])
+    } else {
+      helloSpeaker.speak(names[i])
+    }
+  }
+
+}) ();
